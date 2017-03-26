@@ -1,0 +1,22 @@
+Config {
+          font = "xft:Gohu GohuFont:pixelsize=14"
+        , textOffset = 13 
+        , alpha = 150
+        , borderColor = "black"
+        , border = TopB
+        , bgColor = "#2B1414"
+        , fgColor = "#e6bf98"
+        , position = TopW L 100
+        , commands = [    Run Network "wlp3s0" ["-L","-1","-H","100000000","--normal","#f6f6c9","-m","3","-t","<rx> KB / <tx> KB"] 10 -- note that low and high thresholds are in bytes, not KB
+                        , Run BatteryP ["BAT1"] ["-L","20","-H","101","--normal","#f6f6c9","--low","#ef5847","-p","3","-t","<acstatus> Bat: <left>% (<timeleft>)","--","-O","Charging,","-i","Plugged in,","-o",""] 10            
+                        , Run Wireless "wlp3s0" ["-L","-1","-H","100","--normal","#4baeaa","-m","3","-t","<essid>  <quality>"] 100                        
+                        , Run Cpu ["-L","-1","-H","50","--normal","#f6f6c9","--high","#ef5847","-p","3"] 10
+                        , Run Memory ["-L","-1","-H","75","--normal","#f6f6c9","--high","#ef5847","-p","3","-t","Mem: <usedratio>%"] 10
+                        , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                        , Run StdinReader
+                        ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = "%StdinReader% } %battery% | %cpu% | %memory% | %wlp3s0% %wlp3s0wi% { <fc=#f6f6c9>%date%</fc> "
+
+        }

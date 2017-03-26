@@ -1,0 +1,36 @@
+import XMonad
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import XMonad.Layout.Spacing
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys)
+import System.IO
+
+
+-- Window gap width
+
+gapWidth = 30
+
+
+-- Terminal
+
+myTerm = "st"
+
+
+main = do
+    xmproc <- spawnPipe "xmobar"
+
+    xmonad $ defaultConfig
+        { terminal   = myTerm
+	, manageHook = manageDocks <+> manageHook defaultConfig
+        , layoutHook = spacing gapWidth (avoidStruts (layoutHook defaultConfig))
+        , logHook = dynamicLogWithPP xmobarPP
+                        { ppOutput = hPutStrLn xmproc
+                        , ppTitle = xmobarColor "green" "" . shorten 50
+                        }
+        , modMask = mod4Mask     -- Rebind Mod to the Windows key
+        } `additionalKeys`
+        [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock; xset dpms force off")
+        , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
+        , ((0, xK_Print), spawn "scrot")
+        ]

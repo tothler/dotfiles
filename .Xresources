@@ -1,0 +1,54 @@
+! special
+urxvt.foreground:   #e6bf98
+urxvt.background:   #2B1414
+urxvt.cursorColor:  #e6bf98
+urxvt.font:         xft:Misc Tamsyn:pixelsize=16
+urxvt.scrollBar:    false
+
+urxvt.termName:     rxvt
+
+! copy-paste stuff
+urxvt.keysym.Shift-Control-V: perl:clipboard:paste
+ 
+urxvt.iso14755: False
+
+urxvt.perl-ext-common: default,clipboard
+
+
+! This colorscheme is a modified version of
+! Navy and Ivory here http://dotshare.it/dots/634/
+!
+! It ends up being more Burgundy and Cream
+!
+! black
+urxvt.color0:       #174b57
+urxvt.color8:       #096378
+
+! red
+urxvt.color1:       #bc1e29
+urxvt.color9:       #ef5847
+
+! green
+urxvt.color2:       #7cbf9e
+urxvt.color10:      #a2d9b1
+
+! yellow
+urxvt.color3:       #8a7a63
+urxvt.color11:      #beb090
+
+! blue
+urxvt.color4:       #4d5569
+urxvt.color12:      #61778d
+
+! magenta
+urxvt.color5:       #a9394f
+urxvt.color13:      #ff99a1
+
+! cyan
+urxvt.color6:       #4baeaa
+urxvt.color14:      #9ed9d8
+
+! white
+urxvt.color7:       #f2f1b9
+urxvt.color15:      #f6f6c9
+
