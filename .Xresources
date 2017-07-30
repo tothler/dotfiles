@@ -1,18 +1,21 @@
 ! special
-urxvt.foreground:   #e6bf98
-urxvt.background:   #2B1414
+urxvt.font:            xft:Misc Tamsyn:pixelsize=16
+urxvt.scrollBar:       false
+urxvt.buffered:        false
+urxvt.secondaryScreen: 1
+urxvt.secondaryScroll: 0
+urxvt.cursorBlink:     true
 urxvt.cursorColor:  #e6bf98
-urxvt.font:         xft:Misc Tamsyn:pixelsize=16
-urxvt.scrollBar:    false
 
-urxvt.termName:     rxvt
+! Required for ssh compatibility
+urxvt.termName:        rxvt
 
 ! copy-paste stuff
-urxvt.keysym.Shift-Control-V: perl:clipboard:paste
+! urxvt.keysym.Shift-Control-V: perl:clipboard:paste
  
-urxvt.iso14755: False
+! urxvt.iso14755:               false
 
-urxvt.perl-ext-common: default,clipboard
+! urxvt.perl-ext-common:        default,clipboard
 
 
 ! This colorscheme is a modified version of
@@ -20,9 +23,14 @@ urxvt.perl-ext-common: default,clipboard
 !
 ! It ends up being more Burgundy and Cream
 !
+
+! {fore,back}ground
+urxvt.foreground:   #e6bf98
+urxvt.background:   #2b1414
+
 ! black
-urxvt.color0:       #174b57
-urxvt.color8:       #096378
+urxvt.color0:       #52332b
+urxvt.color8:       #ae6d41
 
 ! red
 urxvt.color1:       #bc1e29
