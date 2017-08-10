@@ -18,6 +18,6 @@ if [ -x /usr/bin/nm-applet ] ; then
    fi
 
 xbindkeys
-feh --bg-center ~/Downloads/pZRkMzP.jpg &
-pulseaudio --start &
+feh --bg-scale ~/Downloads/aZcB3op.jpg &
+start-pulseaudio-x11
 exec xmonad
