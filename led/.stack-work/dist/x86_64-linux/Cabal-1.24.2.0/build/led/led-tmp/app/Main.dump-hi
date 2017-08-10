@@ -1,0 +1,577 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-08 14:55:56.518352354 UTC
+
+interface main@main:Main 8002
+  interface hash: ca71eec9b2b438c81bbbde80621452d6
+  ABI hash: a90366195671780bdb86a55744c5f1fa
+  export-list hash: 4556a594cfcdc5d47e4320066dbd0cfb
+  orphan hash: 24993574fcb8f9bae5e1645f416d665c
+  flag hash: dfb58570142bf76d500f5278ca7faf80
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.defaultEditorState
+  Main.emptyLazyTextZipper
+  Main.fullRedraw
+  Main.getFileContentsAsZipper
+  Main.getPosAsTuple
+  Main.lazyTextZipper
+  Main.main
+  Main.runU
+  Main.Buffer
+  Main.EditorState{Main.ES buf cursorPos filename screenPos}
+  Main.Position{Main.Pos x y}
+  Main.Uber{Main.U}
+module dependencies:
+package dependencies: ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-59sjf9WqHYuFAo9gQw9Bhp
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 led-0.1.0.0@led-0.1.0.0-8yVp8oMrbkELj3k2BsGces
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      terminal-size-0.3.2.1@terminal-size-0.3.2.1-LL700oIgYTEEtJWQuzY2Y4
+                      text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq
+                      text-zipper-0.10@text-zipper-0.10-41KFTca4F3zFG9zT2Vrsjp
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text
+         text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         terminal-size-0.3.2.1@terminal-size-0.3.2.1-LL700oIgYTEEtJWQuzY2Y4:System.Console.Terminal.Common
+                         text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Lazy
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+import  -/  ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-59sjf9WqHYuFAo9gQw9Bhp:System.Console.ANSI 33775f67c106f2e0de40b9b9169ee02f
+import  -/  ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-59sjf9WqHYuFAo9gQw9Bhp:System.Console.ANSI.Unix 4929ac2c7ae7553b2a0fb2113863301b
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  led-0.1.0.0@led-0.1.0.0-8yVp8oMrbkELj3k2BsGces:Lib 83c1150cfb64667b207a7c832f49e822
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.State.Lazy 3bce07487954e2c74715e207af0f6091
+import  -/  terminal-size-0.3.2.1@terminal-size-0.3.2.1-LL700oIgYTEEtJWQuzY2Y4:System.Console.Terminal.Common babceb8b2af9c062dfa5e5bf8cd5715b
+import  -/  terminal-size-0.3.2.1@terminal-size-0.3.2.1-LL700oIgYTEEtJWQuzY2Y4:System.Console.Terminal.Size 6748ed727beb244cc0da4a9343b79009
+import  -/  text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Internal.Lazy 1d36df60999382ca354397a730c53d5d
+import  -/  text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Lazy c402fa33febdf5ba8746d65990593538
+import  -/  text-1.2.2.2@text-1.2.2.2-3ENqlljngKa6xj1Go2fVWq:Data.Text.Lazy.IO 7399b23bd8a29d8b6a708569aab42864
+import  -/  text-zipper-0.10@text-zipper-0.10-41KFTca4F3zFG9zT2Vrsjp:Data.Text.Zipper e25b951abefe2b4fd082efbdf83abc9b
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.State.Lazy 371607e50dde46b5f4103b3ab334a497
+5d30445dacc9abb62268108e03b6dfb0
+  $sevalStateT ::
+    Control.Monad.Trans.State.Lazy.StateT s GHC.Types.IO a
+    -> s -> GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*U(1*U,A))))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT s GHC.Types.IO a)
+                   (s1 :: s) ->
+                 GHC.Base.bindIO
+                   @ (a, s)
+                   @ a
+                   (Control.Monad.Trans.State.Lazy.runStateT
+                      @ s
+                      @ GHC.Types.IO
+                      @ a
+                      m1
+                      s1)
+                   (\ (ds :: (a, s))
+                      (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    (GHC.Base.returnIO @ a (case ds of wild { (,) a1 ds2 -> a1 }))
+                      `cast`
+                    (GHC.Types.N:IO[0] <a>_R)
+                      eta)
+                     `cast`
+                   (<(a, s)>_R ->_R Sym (GHC.Types.N:IO[0] <a>_R))) -}
+2c6a598c8d333eab7ef06986bde59585
+  $tc'ES :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2054115813862010319##
+                   2650743598355231874##
+                   Main.$trModule
+                   Main.$tc'ES1) -}
+f681658dbac1bd5051c2d50da85e863e
+  $tc'ES1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ES"#) -}
+3a9327987f6fdc4a0202ab79bc79a64f
+  $tc'Pos :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17615806629159182294##
+                   14692025992988454070##
+                   Main.$trModule
+                   Main.$tc'Pos1) -}
+03139b6ff8d3ad683a7d227bee11a08a
+  $tc'Pos1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Pos"#) -}
+ef9259922c3824eebb38868f7e26327f
+  $tc'U :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6006472342125753766##
+                   11861739721333643555##
+                   Main.$trModule
+                   Main.$tc'U1) -}
+6aad67d16d7271df4977c9034e44bc84
+  $tc'U1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'U"#) -}
+7e0caa48a3345872fe426804a9ed42ed
+  $tcEditorState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14063684541435627811##
+                   10063517756836000177##
+                   Main.$trModule
+                   Main.$tcEditorState1) -}
+3820e5fe587b9a0f05cbf2b4e108c9ed
+  $tcEditorState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "EditorState"#) -}
+5e276f2870673ecc663ef9b3b5d2151d
+  $tcPosition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12687856112050944805##
+                   5335922489715228545##
+                   Main.$trModule
+                   Main.$tcPosition1) -}
+f7d9f8980ca0b678cf482027881875f6
+  $tcPosition1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Position"#) -}
+fc6294603e43c066dec3f2f10b102182
+  $tcUber :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11958846157497170440##
+                   3899352379465147665##
+                   Main.$trModule
+                   Main.$tcUber1) -}
+e059762e36df262b2adbb4307207bb2a
+  $tcUber1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Uber"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+bb13a0905639384ec242ca9e9d5964cd
+  $wdrop' ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [0] -}
+a0a7e9c2dc99c7086b29b52c323950d2
+  $wgo31 ::
+    GHC.Prim.Int# -> Data.Text.Internal.Lazy.Text -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+0359231f1091ed267899d44f20150c74
+  $wlazyTextZipper ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Data.Text.Internal.Lazy.Text) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 0#) of wild1 {
+                   GHC.Types.False -> Main.$wtake' ww w
+                   GHC.Types.True -> Data.Text.Internal.Lazy.Empty }) -}
+5224124e71ff8407e4cf26b0150c5327
+  $wlazyTextZipper1 ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Data.Text.Internal.Lazy.Text) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 0#) of wild1 {
+                   GHC.Types.False -> Main.$wdrop' ww w GHC.Types.True -> w }) -}
+01dc98dd6f3eda9a6cfce63e3fb56a64
+  $wtake' ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+61bb5161f04a7fc8bd0c5092b57fee70
+  type Buffer =
+    Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text
+7022ca8aeda8d8b9e60021c16375d470
+  data EditorState
+    = ES {buf :: Main.Buffer,
+          cursorPos :: Main.Position,
+          screenPos :: GHC.Types.Int,
+          filename :: Data.Text.Internal.Lazy.Text}
+e2d16306959d8976b223e60faf649483
+  data Position = Pos {x :: GHC.Types.Int, y :: GHC.Types.Int}
+5b7673443bd3d13dcce83d20c9240cf8
+  type role Uber nominal
+  newtype Uber a
+    = U (Control.Monad.Trans.State.Lazy.StateT
+           Main.EditorState GHC.Types.IO a)
+d459a6b004228dbcf886b3e2720cce50
+  buf :: Main.EditorState -> Main.Buffer
+  RecSel Left Main.EditorState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U(U,U,U,U,U,U,U,U,U,U,U,U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.EditorState) ->
+                 case ds of wild { Main.ES ds2 ds3 ds4 ds5 -> ds2 }) -}
+e0b3ed99077587a532afce8effb2c141
+  cursorPos :: Main.EditorState -> Main.Position
+  RecSel Left Main.EditorState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.EditorState) ->
+                 case ds of wild { Main.ES ds2 ds3 ds4 ds5 -> ds3 }) -}
+5e7ebe68e6d11828207b4ae28ab4dd79
+  defaultEditorState :: Main.EditorState
+  {- Strictness: m,
+     Unfolding: (Main.ES
+                   Main.emptyLazyTextZipper
+                   Main.defaultEditorState2
+                   Main.defaultEditorState1
+                   Data.Text.Internal.Lazy.Empty) -}
+78a7d483cb607717f2dd0428bb9582c4
+  defaultEditorState1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+f2488b078c31ab08ab80e062d5357932
+  defaultEditorState2 :: Main.Position
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Main.Pos
+                   Main.defaultEditorState1
+                   Main.defaultEditorState1) -}
+a8d54adecb06245b3877373ee967ad92
+  emptyLazyTextZipper ::
+    Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text
+  {- Unfolding: (Data.Text.Zipper.TZ
+                   @ Data.Text.Internal.Lazy.Text
+                   Data.Text.Internal.Lazy.Empty
+                   Data.Text.Internal.Lazy.Empty
+                   (GHC.Types.[] @ Data.Text.Internal.Lazy.Text)
+                   (GHC.Types.[] @ Data.Text.Internal.Lazy.Text)
+                   Data.Text.Lazy.singleton
+                   Main.emptyLazyTextZipper3
+                   Main.emptyLazyTextZipper2
+                   Main.emptyLazyTextZipper1
+                   Data.Text.Lazy.last
+                   Data.Text.Lazy.init
+                   Data.Text.Lazy.null
+                   Data.Text.Lazy.lines
+                   Data.Text.Lazy.unpack
+                   (GHC.Base.Nothing @ GHC.Types.Int)) -}
+05f7c89714a7a708735e17bd876f3ea2
+  emptyLazyTextZipper1 ::
+    Data.Text.Internal.Lazy.Text -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Lazy.Text) ->
+                 case Main.$wgo31 0# w of ww { DEFAULT -> GHC.Types.I# ww }) -}
+d02ee34d72a10324987f29823463e753
+  emptyLazyTextZipper2 ::
+    GHC.Types.Int
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.Text.Internal.Lazy.Text) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Main.$wlazyTextZipper ww1 w1 }) -}
+4cb17718bdf7a8a9e2f438c41facc8bd
+  emptyLazyTextZipper3 ::
+    GHC.Types.Int
+    -> Data.Text.Internal.Lazy.Text -> Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.Text.Internal.Lazy.Text) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Main.$wlazyTextZipper1 ww1 w1 }) -}
+04d16af291779f1c24a5b7d74d66542c
+  filename :: Main.EditorState -> Data.Text.Internal.Lazy.Text
+  RecSel Left Main.EditorState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.EditorState) ->
+                 case ds of wild { Main.ES ds2 ds3 ds4 ds5 -> ds5 }) -}
+771fec255063a559367ae4b9b9839085
+  fullRedraw :: Main.EditorState -> GHC.Types.IO ()
+  {- Arity: 2,
+     Strictness: <L,U(1*U(1*U,U,1*U,U,A,A,A,A,A,A,A,A,A,A),U(1*U(U),1*U(U)),U(U),A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.fullRedraw1
+                  `cast`
+                (<Main.EditorState>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c79036a83f51b01f53b1d9e394d046a4
+  fullRedraw1 ::
+    Main.EditorState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2,
+     Strictness: <L,U(1*U(1*U,U,1*U,U,A,A,A,A,A,A,A,A,A,A),U(1*U(U),1*U(U)),U(U),A)><S,U> -}
+99b44b9a545b83bf961fff157af96ae7
+  getFileContentsAsZipper ::
+    GHC.IO.FilePath
+    -> GHC.Types.IO
+         (Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.getFileContentsAsZipper1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text>_R)) -}
+d2c7c49e352469514495bad000d525ef
+  getFileContentsAsZipper1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (f :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        f
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Text.Lazy.IO.getContents2
+                        ipv1
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    let {
+                      ds :: (Data.Text.Internal.Lazy.Text,
+                             [Data.Text.Internal.Lazy.Text])
+                      = case Data.Text.Lazy.lines ipv3 of wild1 {
+                          [] -> Main.getFileContentsAsZipper2 : ds4 ds5 -> (ds4, ds5) }
+                    } in
+                    Data.Text.Zipper.TZ
+                      @ Data.Text.Internal.Lazy.Text
+                      Data.Text.Internal.Lazy.Empty
+                      (case ds of wild { (,) first rest -> first })
+                      (GHC.Types.[] @ Data.Text.Internal.Lazy.Text)
+                      (case ds of wild { (,) first rest -> rest })
+                      Data.Text.Lazy.singleton
+                      Main.emptyLazyTextZipper3
+                      Main.emptyLazyTextZipper2
+                      Main.emptyLazyTextZipper1
+                      Data.Text.Lazy.last
+                      Data.Text.Lazy.init
+                      Data.Text.Lazy.null
+                      Data.Text.Lazy.lines
+                      Data.Text.Lazy.unpack
+                      (GHC.Base.Nothing @ GHC.Types.Int) #) } }) -}
+4ab32c49729b0a067b50562175a26c7f
+  getFileContentsAsZipper2 ::
+    (Data.Text.Internal.Lazy.Text, [Data.Text.Internal.Lazy.Text])
+  {- HasNoCafRefs,
+     Unfolding: ((Data.Text.Internal.Lazy.Empty,
+                  GHC.Types.[] @ Data.Text.Internal.Lazy.Text)) -}
+86a3be36c3f3c8d321ef7e84a37c3ac2
+  getPosAsTuple :: Main.Position -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(1*U,1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (p :: Main.Position) ->
+                 (case p of wild { Main.Pos ds ds2 -> ds },
+                  case p of wild { Main.Pos ds ds2 -> ds2 })) -}
+322f87c3ad32744b2a9d690d0b650d90
+  lazyTextZipper ::
+    [Data.Text.Internal.Lazy.Text]
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> Data.Text.Zipper.TextZipper Data.Text.Internal.Lazy.Text
+  {- Arity: 2, Strictness: <L,1*U><L,U>,
+     Unfolding: (\ (ls :: [Data.Text.Internal.Lazy.Text])
+                   (lmt :: GHC.Base.Maybe GHC.Types.Int) ->
+                 let {
+                   ds :: (Data.Text.Internal.Lazy.Text,
+                          [Data.Text.Internal.Lazy.Text])
+                   = case lmt of wild {
+                       GHC.Base.Nothing
+                       -> case ls of wild1 {
+                            [] -> Main.getFileContentsAsZipper2 : ds2 ds3 -> (ds2, ds3) }
+                       GHC.Base.Just n
+                       -> case n of wild1 { GHC.Types.I# y1 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# 0# y1) of wild2 {
+                            GHC.Types.False -> Main.getFileContentsAsZipper2
+                            GHC.Types.True
+                            -> case GHC.List.$wunsafeTake
+                                      @ Data.Text.Internal.Lazy.Text
+                                      y1
+                                      ls of wild3 {
+                                 [] -> Main.getFileContentsAsZipper2 : ds2 ds3 -> (ds2, ds3) } } } }
+                 } in
+                 Data.Text.Zipper.TZ
+                   @ Data.Text.Internal.Lazy.Text
+                   Data.Text.Internal.Lazy.Empty
+                   (case ds of wild { (,) first rest -> first })
+                   (GHC.Types.[] @ Data.Text.Internal.Lazy.Text)
+                   (case ds of wild { (,) first rest -> rest })
+                   Data.Text.Lazy.singleton
+                   Main.emptyLazyTextZipper3
+                   Main.emptyLazyTextZipper2
+                   Main.emptyLazyTextZipper1
+                   Data.Text.Lazy.last
+                   Data.Text.Lazy.init
+                   Data.Text.Lazy.null
+                   Data.Text.Lazy.lines
+                   Data.Text.Lazy.unpack
+                   lmt) -}
+7735c388c6fee57b07ae3dfe5df0b506
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+907abc65f282c9881f8d97d0dd3237b7
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Environment.getArgs1 s of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.FD.openFile1
+                        (GHC.List.head @ GHC.Base.String ipv1)
+                        GHC.IO.IOMode.ReadMode
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 case Data.Text.Lazy.IO.getContents2
+                        ipv3
+                        ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                 case Main.fullRedraw1
+                        (let {
+                           ds :: (Data.Text.Internal.Lazy.Text,
+                                  [Data.Text.Internal.Lazy.Text])
+                           = case Data.Text.Lazy.lines ipv5 of wild1 {
+                               [] -> Main.getFileContentsAsZipper2 : ds5 ds6 -> (ds5, ds6) }
+                         } in
+                         Main.ES
+                           (Data.Text.Zipper.TZ
+                              @ Data.Text.Internal.Lazy.Text
+                              Data.Text.Internal.Lazy.Empty
+                              (case ds of wild { (,) first rest -> first })
+                              (GHC.Types.[] @ Data.Text.Internal.Lazy.Text)
+                              (case ds of wild { (,) first rest -> rest })
+                              Data.Text.Lazy.singleton
+                              Main.emptyLazyTextZipper3
+                              Main.emptyLazyTextZipper2
+                              Main.emptyLazyTextZipper1
+                              Data.Text.Lazy.last
+                              Data.Text.Lazy.init
+                              Data.Text.Lazy.null
+                              Data.Text.Lazy.lines
+                              Data.Text.Lazy.unpack
+                              (GHC.Base.Nothing @ GHC.Types.Int))
+                           Main.defaultEditorState2
+                           Main.defaultEditorState1
+                           (case ipv1 of wild {
+                              []
+                              -> case GHC.List.badHead ret_ty Data.Text.Internal.Lazy.Text of {}
+                              : x1 ds5
+                              -> case GHC.Base.map
+                                        @ GHC.Types.Char
+                                        @ GHC.Types.Char
+                                        Data.Text.Internal.safe
+                                        x1 of dt { DEFAULT ->
+                                 Main.main_outer dt } }))
+                        ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, GHC.Tuple.() #) } } } }) -}
+100da628b307ace3bdea1bed2c345dea
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+88a1747dcf76206d94e4d7995a75a504
+  main_outer :: [GHC.Types.Char] -> Data.Text.Internal.Lazy.Text
+  {- Arity: 1, Strictness: <S,1*U> -}
+50e3ec4d081504f5ec2fc469d924e583
+  runU :: Main.Uber a -> Main.EditorState -> GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*U(1*U,A))))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (Main.$sevalStateT @ Main.EditorState)
+                  `cast`
+                (forall (a :: <*>_N).
+                 Sym (Main.N:Uber[0]) <a>_N
+                 ->_R <Main.EditorState -> GHC.Types.IO a>_R) -}
+42c32848e6cf3df30e87ac9737a0c83e
+  screenPos :: Main.EditorState -> GHC.Types.Int
+  RecSel Left Main.EditorState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.EditorState) ->
+                 case ds of wild { Main.ES ds2 ds3 ds4 ds5 -> ds4 }) -}
+7b10ec24fb0c348abf946bc88e6e8b9c
+  x :: Main.Position -> GHC.Types.Int
+  RecSel Left Main.Position
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Position) ->
+                 case ds of wild { Main.Pos ds2 ds3 -> ds2 }) -}
+9e85c5d91a09b27ae8e1bac1492b092b
+  y :: Main.Position -> GHC.Types.Int
+  RecSel Left Main.Position
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Position) ->
+                 case ds of wild { Main.Pos ds2 ds3 -> ds3 }) -}
+"SPEC/Main evalStateT @ IO _ _" [ALWAYS] forall @ s
+                                                @ a
+                                                ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Control.Monad.Trans.State.Lazy.evalStateT @ GHC.Types.IO
+                                            @ s
+                                            @ a
+                                            $dMonad
+  = Main.$sevalStateT @ s @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

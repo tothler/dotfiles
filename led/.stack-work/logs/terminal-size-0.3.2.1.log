@@ -1,0 +1,14 @@
+Configuring terminal-size-0.3.2.1...
+Building terminal-size-0.3.2.1...
+Preprocessing library terminal-size-0.3.2.1...
+Posix.hsc:24:0: warning: "hsc_alignment" redefined
+In file included from .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Console/Terminal/Posix_hsc_make.c:1:0:
+/usr/lib/ghc-8.0.2/template-hsc.h:88:0: note: this is the location of the previous definition
+ #define hsc_alignment(t...) \
+ 
+[1 of 3] Compiling System.Console.Terminal.Common ( src/System/Console/Terminal/Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Console/Terminal/Common.o )
+[2 of 3] Compiling System.Console.Terminal.Posix ( .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Console/Terminal/Posix.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Console/Terminal/Posix.o )
+[3 of 3] Compiling System.Console.Terminal.Size ( src/System/Console/Terminal/Size.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Console/Terminal/Size.o )
+Installing library in
+/home/autopilot/.stack/snapshots/x86_64-linux/lts-9.0/8.0.2/lib/x86_64-linux-ghc-8.0.2/terminal-size-0.3.2.1-LL700oIgYTEEtJWQuzY2Y4
+Registering terminal-size-0.3.2.1...
