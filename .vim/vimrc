@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 set number
 syntax on
+colo peachpuff
 let mapleader="\\"
 map <leader>s :source ~/.vimrc<CR>
 
@@ -72,6 +73,7 @@ let g:haskell_tabular = 1
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
+
 
 
 
