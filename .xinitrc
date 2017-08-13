@@ -17,6 +17,8 @@ if [ -x /usr/bin/nm-applet ] ; then
 	   nm-applet --sm-disable &
    fi
 
+amixer set Headphone unmute
+amixer set Headphone 100%`
 xbindkeys
 feh --bg-scale ~/Downloads/aZcB3op.jpg &
 start-pulseaudio-x11
